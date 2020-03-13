@@ -1,0 +1,12 @@
+{
+    "name": "saleinikov/phpls-022020-home-work-6",
+    "require": {
+        "illuminate/database": "^7.1"
+    },
+    "authors": [
+        {
+            "name": "Sergey Aleinikov",
+            "email": "chaositomail@gmail.com"
+        }
+    ]
+}
