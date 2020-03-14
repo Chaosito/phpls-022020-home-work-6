@@ -18,7 +18,7 @@ Capsule::schema()->dropIfExists('product_categories');
 
 Capsule::schema()->create('product_categories', function (Blueprint $table) {
     $table->increments('id');
-    $table->integer('creator_id')->unsigned();
+    $table->integer('creator_id')->unsigned()->index();
     $table->string('title');
 });
 
@@ -26,7 +26,7 @@ Capsule::schema()->dropIfExists('products');
 
 Capsule::schema()->create('products', function (Blueprint $table) {
     $table->increments('id');
-    $table->integer('category_id')->unsigned();
+    $table->integer('category_id')->unsigned()->index();;
     $table->string('title');
 });
 
